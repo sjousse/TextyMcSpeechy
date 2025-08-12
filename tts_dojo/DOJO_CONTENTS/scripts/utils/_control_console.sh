@@ -5,7 +5,7 @@ trap "kill 0" SIGINT
 
 DOJO_DIR=$(basename "$(dirname "$PWD")")  # this script runs from <name>_dojo/scripts so need parent directory   
 VOICE_NAME=$(echo "$DOJO_DIR" | sed 's/_dojo$//')
-SETTINGS_FILE="SETTINGS.txt"
+SETTINGS_FILE="./SETTINGS.txt"
 COLOR_FILE=".colors"
 
 # load settings
