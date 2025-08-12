@@ -2,7 +2,7 @@
 #preprocess_dataset.sh:   Configures and runs piper_train.preprocess inside the textymcspeechy-piper docker container
 
 DOJO_NAME=$(basename $PWD) # Get from <voice_name>_dojo
-SETTINGS_FILE="SETTINGS.txt"
+SETTINGS_FILE="./SETTINGS.txt"
 CACHE_DIR="../training_folder/cache"
 CONFIG_JSON="../training_folder/config.json"
 DATASET_JSONL="../training_folder/dataset.jsonl"
