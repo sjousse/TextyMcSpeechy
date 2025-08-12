@@ -13,7 +13,7 @@ echo "Starting checkpoint_grabber.sh"
 # infer variables from parent directory name
 DOJO_NAME=$(awk -F'/' '{print $(NF-1)}' <<< "$PWD")
 VOICE_NAME=$(awk -F'/' '{print $(NF-1)}' <<< "$PWD" | sed 's/_dojo$//')
-SETTINGS_FILE="SETTINGS.txt"
+SETTINGS_FILE="./SETTINGS.txt"
 TTS_VOICES="tts_voices"  # constant for name of folder that will hold tts voices
 
 # path to temporary file on host that communicates arrival of new checkpoint file between inotify and main process.
