@@ -6,7 +6,7 @@ echo "Running piper_training.sh"
 trap "kill 0" SIGINT
 set +e # Exit immediately if any command returns a non-zero exit code
 
-SETTINGS_FILE="SETTINGS.txt"
+SETTINGS_FILE="./SETTINGS.txt"
 
 # flag file that overrides the use of pretrained checkpoints
 TRAIN_FROM_SCRATCH_FILE="../target_voice_dataset/.SCRATCH"
