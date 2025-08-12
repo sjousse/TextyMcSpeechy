@@ -42,7 +42,7 @@ else
     exit 1
 fi
 
-SETTINGS_FILE="SETTINGS.txt"
+SETTINGS_FILE="./SETTINGS.txt"
 
 if [ -e $SETTINGS_FILE ]; then
     source $SETTINGS_FILE
